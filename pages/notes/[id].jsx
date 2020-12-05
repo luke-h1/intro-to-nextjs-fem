@@ -1,16 +1,16 @@
-import React from 'react';
-import { useRouter } from 'next/router';
+// pages/[id].jsx
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
+import { useRouter } from 'next/router'
+import Link from 'next/link'
 
-const Page = () => {
-  const router = useRouter();
+export default () => {
+  const router = useRouter()
+  const { id }= router.query
 
-  const { id } = router.query;
-  console.log(id)
-
-  return ( 
-    <h1>
-      Note {id}
-    </h1>
+  return (
+    <div sx={{variant: 'containers.page'}}>
+      <h1>Note: {id} </h1>
+    </div>
   )
-};
-export default Page;
+}
