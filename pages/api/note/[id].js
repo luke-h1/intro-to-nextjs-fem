@@ -13,7 +13,6 @@ const handler = nc()
       res.end();
       return;
     }
-
     res.json({ data: note });
   })
   .patch((req, res) => {
