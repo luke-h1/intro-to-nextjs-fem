@@ -19,9 +19,9 @@ export default () => (
   </div>
 );
 
-export function getStaticProps(context) {
-  console.log(context);
-  return {
-    props: {},
-  };
-}
+// export function getStaticProps(context) {
+//   console.log(context);
+//   return {
+//     props: {},
+//   };
+// }
